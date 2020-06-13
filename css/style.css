@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*, ::after, ::before{
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+
+}
+
+html{
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    
+}
+
+body{
+    background: url(../img/bg-desktop.svg) center no-repeat;
+    background-size: cover;
+    letter-spacing: .1rem;
+    height: 100vh;
+    color: #fff;
+  
+   
+   
+}
+
+.container{
+
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    height: 100%;
+}
+
+.container-fylo{
+
+    background-color: hsl(228, 52%, 34%);
+    border-radius: 1rem 5rem 1rem 1rem;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    height: 13rem;
+    width: 23rem;
+    padding: 0rem;
+    display: flex;
+}
+
+.container-fylo > div{
+    margin-left: 2.5rem; 
+}
+
+.img{
+    justify-content: space-evenly;
+    display: flex;
+    width: 12rem;
+    height: 3rem;
+}
+
+.img > div {
+    background-color: hsl(225, 58%, 17%);
+    border-radius: 0.5rem;
+    line-height: 3.6rem;
+    text-align: center;
+    margin-left: 1rem;
+    width: 3.5rem;
+}
+
+
+.container-gb{
+
+    background-color: hsl(228, 52%, 34%);
+    border-radius: 1rem 1rem 1rem 1rem;
+    position: relative;
+    height: 10rem;
+    width: 23rem;
+}
+
+.container-gb h6{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+.container-gb h6 > span{
+    font-weight: 900;
+}
+
+
+
+
+.bar{
+    background-color: hsl(225, 58%, 17%);
+    border-radius: 1rem 1rem 1rem 1rem;
+    text-align: center;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1rem;
+    width: 20rem;
+    height: 1rem;
+}
+
+.bar::after{
+
+    background: linear-gradient(to Right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 1rem;
+    position: absolute;
+    height: 100%;
+    content: '';
+    width: 80%;
+    right: 0;
+    left: 0;
+}
+
+.below-bar{
+    justify-content: space-between;
+    margin-left: 1.5rem;
+    margin-top: 0.2rem;
+    font-size: .8rem;
+    display: flex;
+    width: 20rem;
+
+
+}
+
+
+
+.white-rectangle{
+    text-align: center;
+    margin-top: 1rem;
+    color: #000;
+}
+.white-rectangle p{
+    background-color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.white-rectangle p span{
+    letter-spacing: 0.5rem;
+    font-weight: 900;
+    font-size: 2rem;
+    
+
+}
+
+
+@media only screen and (max-width:1920px) and (min-width:980px){
+
+    body{
+        background: url(../img/bg-desktop.svg) bottom no-repeat;
+        background-color: #060910;
+        background-size: 100% 52%;
+        letter-spacing: .1rem;
+        height: 100vh;
+        color: #fff;
+    }
+    
+
+    .container{
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        display: flex;
+        height: 100%;
+    }
+
+    .container-fylo{
+        margin-right: 2rem;
+    }
+
+    .container-gb{
+        width:40rem;
+    }
+
+    .container-gb h6{
+        text-align: left;
+        margin-left: 3rem;
+    }
+
+    .bar{
+        width: 34rem;
+    }
+    
+    .below-bar{
+        margin-left: 3rem;
+        width: 34rem; 
+    }
+    
+    .white-rectangle {
+        text-align: center;
+        margin-top: 1rem;
+        color: #000;
+    }
+
+    .white-rectangle p{
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 100%, 89% 85%, 0 86%);
+        padding: 1.5rem 1.5rem 2rem 1.5rem;
+        border-radius: 1rem 1rem 0rem 1rem;
+        position: absolute;
+        right: 61px;
+        top: -61px;
+    }
+
+}
